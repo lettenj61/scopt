@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 // js version
 
 @js.native
-@JSImport("os", JSImport.Namespace)
+@JSImport("os", JSImport.Namespace, globalFallback = "scoptOS")
 object OS extends js.Object {
   val EOL: String = js.native
 }
